@@ -1,0 +1,16 @@
+﻿  Main.cpp
+  ofstream12.cpp
+  Generating Code...
+ofstream12.obj : error LNK2005: "public: __cdecl ofstream12::ofstream12(char const *,unsigned __int64)" (??0ofstream12@@QEAA@PEBD_K@Z) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: __cdecl ofstream12::~ofstream12(void)" (??1ofstream12@@QEAA@XZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: class ofstream12 & __cdecl ofstream12::operator<<(unsigned __int64)" (??6ofstream12@@QEAAAEAV0@_K@Z) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: void __cdecl ofstream12::close(void)" (?close@ofstream12@@QEAAXXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "private: void __cdecl ofstream12::completeWriteBit(void)" (?completeWriteBit@ofstream12@@AEAAXXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: void __cdecl ofstream12::flush(void)" (?flush@ofstream12@@QEAAXXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: bool __cdecl ofstream12::good(void)const " (?good@ofstream12@@QEBA_NXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "private: void __cdecl ofstream12::init(void)" (?init@ofstream12@@AEAAXXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: bool __cdecl ofstream12::isOpen(void)const " (?isOpen@ofstream12@@QEBA_NXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "public: void __cdecl ofstream12::open(char const *)" (?open@ofstream12@@QEAAXPEBD@Z) already defined in Main.obj
+ofstream12.obj : error LNK2005: "private: void __cdecl ofstream12::writeBit0(void)" (?writeBit0@ofstream12@@AEAAXXZ) already defined in Main.obj
+ofstream12.obj : error LNK2005: "private: void __cdecl ofstream12::writeBit1(void)" (?writeBit1@ofstream12@@AEAAXXZ) already defined in Main.obj
+D:\Study\SwinburneVN\IT Major\COS30008\Labs\Week 06\Project\Week 06\x64\Debug\Week 06.exe : fatal error LNK1169: one or more multiply defined symbols found

@@ -1,0 +1,15 @@
+
+XCode:
+
+- Open file with Xcode
+– Enter Shift-Command-J (on file)
+– Right-click the filename in the left sidebar
+– Select Open As Hex
+
+Visual Studio:
+
+- Open file with Visual Studio
+- select file
+- use drop down and select Open With:
+- scroll to Binary Editor
+

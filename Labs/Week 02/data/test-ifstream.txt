@@ -1,0 +1,98 @@
+Construct object and optionally open file
+Constructs an ifstream object:
+
+(1) default constructor
+    Constructs an ifstream object that is not associated with any file.
+    Internally, its istream base constructor is passed a pointer to a newly constructed filebuf object (the internal file stream buffer).
+(2) initialization constructor
+    Constructs an ifstream object, initially associated with the file identified by its first argument (filename), open with the mode specified by mode.
+    Internally, its istream base constructor is passed a pointer to a newly constructed filebuf object (the internal file stream buffer). Then, filebuf::open is called with filename and mode as arguments.
+    If the file cannot be opened, the stream's failbit flag is set.
+(3) copy constructor (deleted)
+    Deleted (no copy constructor).
+(4) move constructor
+    Acquires the contents of x.
+    First, the function move-constructs both its base istream class from x and a filebuf object from x's internal filebuf object, and then associates them by calling member set_rdbuf.
+    x is left in an unspecified but valid state.
+
+The internal filebuf object has at least the same duration as the ifstream object.
+
+Parameters
+
+filename
+    A string representing the name of the file to open.
+    Specifics about its format and validity depend on the library implementation and running environment.
+mode
+    Flags describing the requested i/o mode for the file.
+    This is an object of the bitmask member type openmode that consists of a combination of the following member constants:
+    member constant	stands for	access
+    in *	input	File open for reading: the internal stream buffer supports input operations.
+    out	output	File open for writing: the internal stream buffer supports output operations.
+    binary	binary	Operations are performed in binary mode rather than text.
+    ate	at end	The output position starts at the end of the file.
+    app	append	All output operations happen at the end of the file, appending to its existing contents.
+    trunc	truncate	Any contents that existed in the file before it is open are discarded.
+    These flags can be combined with the bitwise OR operator (|).
+    * in is always set for ifstream objects (even if explicitly not set in argument mode).
+    Note that even though ifstream is an input stream, its internal filebuf object may be set to also support output operations.
+
+        C++98
+        C++11
+
+    If the mode has app set, the opening operation fails. It also fails if trunc is set but out is not.
+x
+    A ifstream object of the same type (with the same class template parameters charT and traits), whose value is moved.
+
+
+Example
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+
+	
+
+// ifstream constructor.
+#include <iostream>     // std::cout
+#include <fstream>      // std::ifstream
+
+int main () {
+
+  std::ifstream ifs ("test.txt", std::ifstream::in);
+
+  char c = ifs.get();
+
+  while (ifs.good()) {
+    std::cout << c;
+    c = ifs.get();
+  }
+
+  ifs.close();
+
+  return 0;
+}
+
+	
+Edit & Run
+
+
+Data races
+The move constructor (4) modifies x.
+
+Exception safety

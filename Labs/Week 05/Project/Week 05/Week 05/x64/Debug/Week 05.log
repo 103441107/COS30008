@@ -1,0 +1,21 @@
+﻿  EasterEgg.cpp
+  EasterEggIterator.cpp
+  Main.cpp
+  Generating Code...
+Main.obj : error LNK2005: "public: __cdecl EasterEgg::EasterEgg(void)" (??0EasterEgg@@QEAA@XZ) already defined in EasterEgg.obj
+Main.obj : error LNK2005: "public: __cdecl EasterEggIterator::EasterEggIterator(class EasterEgg const &,unsigned __int64)" (??0EasterEggIterator@@QEAA@AEBVEasterEgg@@_K@Z) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: __cdecl EasterEgg::~EasterEgg(void)" (??1EasterEgg@@QEAA@XZ) already defined in EasterEgg.obj
+Main.obj : error LNK2005: "public: bool __cdecl EasterEggIterator::operator==(class EasterEggIterator const &)const " (??8EasterEggIterator@@QEBA_NAEBV0@@Z) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: bool __cdecl EasterEggIterator::operator!=(class EasterEggIterator const &)const " (??9EasterEggIterator@@QEBA_NAEBV0@@Z) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: struct DataMap const & __cdecl EasterEgg::operator[](unsigned __int64)const " (??AEasterEgg@@QEBAAEBUDataMap@@_K@Z) already defined in EasterEgg.obj
+Main.obj : error LNK2005: "public: unsigned int const & __cdecl EasterEggIterator::operator*(void)const " (??DEasterEggIterator@@QEBAAEBIXZ) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: class EasterEggIterator __cdecl EasterEggIterator::operator++(int)" (??EEasterEggIterator@@QEAA?AV0@H@Z) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: class EasterEggIterator & __cdecl EasterEggIterator::operator++(void)" (??EEasterEggIterator@@QEAAAEAV0@XZ) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "private: void __cdecl EasterEggIterator::advance(void)" (?advance@EasterEggIterator@@AEAAXXZ) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: class EasterEggIterator __cdecl EasterEgg::begin(void)const " (?begin@EasterEgg@@QEBA?AVEasterEggIterator@@XZ) already defined in EasterEgg.obj
+Main.obj : error LNK2005: "public: class EasterEggIterator __cdecl EasterEggIterator::begin(void)const " (?begin@EasterEggIterator@@QEBA?AV1@XZ) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: class EasterEggIterator __cdecl EasterEgg::end(void)const " (?end@EasterEgg@@QEBA?AVEasterEggIterator@@XZ) already defined in EasterEgg.obj
+Main.obj : error LNK2005: "public: class EasterEggIterator __cdecl EasterEggIterator::end(void)const " (?end@EasterEggIterator@@QEBA?AV1@XZ) already defined in EasterEggIterator.obj
+Main.obj : error LNK2005: "public: bool __cdecl EasterEgg::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?load@EasterEgg@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in EasterEgg.obj
+Main.obj : error LNK2005: "public: unsigned __int64 __cdecl EasterEgg::size(void)const " (?size@EasterEgg@@QEBA_KXZ) already defined in EasterEgg.obj
+D:\Study\SwinburneVN\IT Major\COS30008\Labs\Week 05\Project\Week 05\x64\Debug\Week 05.exe : fatal error LNK1169: one or more multiply defined symbols found
